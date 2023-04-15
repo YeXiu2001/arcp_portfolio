@@ -8,41 +8,92 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="bg-slate-600 font-mono">
+<body class="bg-gradient-to-r from-slate-900 to-blue-900 font-san text-white">
 
     <!-- Header Start -->
-    <nav class=" p-3 bg-slate-800 shadow md:flex md:items-center md:justify-between"> 
-        <div class="flex justify-between items-center">
-            <img class="h-12 inline p-0" src="./img/rp-low-resolution-logo-color-on-transparent-background.png" alt="Logo">
-
-            <a href="index.html" class="text-sky-300 text-lg">
-                <span class="text-sky-500 font-bold text-2xl">R</span><span class="text-2xl">|</span><span class="text-sky-500 font-bold text-2xl">P</span>araiso
-            </a>
-            
-            <span class="text-3xl cursor-pointer md:hidden-block md:hidden text-sky-300">
-                <ion-icon name="menu-sharp" onclick="Menu(this)"></ion-icon>
-            </span>
-        </div>
-
-        <ul class="text-sky-300 md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-slate-800 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all in-ease duration-500">
-            <li class=" text-lg mx-4 my-6 md:my-0">
-                <a href="" class="hover:text-blue-800 duration-500" >Home</a>
-            </li>
-            <li class=" text-lg mx-4 my-6 md:my-0">
-                <a href="" class="hover:text-blue-800 duration-500" >AboutMe</a>
-            </li>
-            <li class=" text-lg mx-4 my-6 md:my-0">
-                <a href="" class="hover:text-blue-800 duration-500" >Education</a>
-            </li>
-            <li class=" text-lg mx-4 my-6 md:my-0">
-                <a href="" class="hover:text-blue-800 duration-500" >Projects</a>
-            </li>
-            <li class=" text-lg mx-4 my-6 md:my-0">
-                <a href="" class="hover:text-blue-800 duration-500" >ContactMe</a>
-            </li>
-            
+   
+<nav class="border-slate-800 border-b-2 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 text-white fixed w-full">
+    <div class="container flex flex-wrap items-center justify-between mx-auto mb-">
+      <a href="" class="flex items-center">
+          <img src="./img/rp-low-resolution-logo-color-on-transparent-background.png" class="h-6 mr-3 sm:h-9" alt="Logo" />
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">RParaiso</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col p-4 mt-4 border border-gray-900 rounded-lg bg-gradient-to-r from-slate-900 to-blue-900 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ContactMe</a>
+          </li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
+  
+
+    <!-- About Me -->
+    <div class="flex items-center justify-between py-5 px-6 text-sky-300 border-gray-700 border-b-2 pt-14">
+        <div>
+            <p class="text-6xl uppercase font-semibold text-sky">HI! I'm Raymart</p>
+            <p>A wanna be Front-End Developer</p>
+            <p>Ang mubasa Gwapo</p>
+        </div>
+        
+        <img src="./img/profile.png" alt="picture" class="object-center overflow-hidden pt-9">
+    </div>
+    
+    <div class="flex min-h-screen items-center justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="group relative items-center justify-center overflow-hidden cursor-pointer">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" src="./img/rp-low-resolution-logo-color-on-transparent-background.png" alt="proj pic">
+                </div>
+                <!-- PRoject1 -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
+                <h1 class="text-2xl font-bold text-white">Lab1-Portfolio</h1>
+                <p class="text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel amet rerum eligendi.</p>
+                <button class="border rounded-full p-2" onclick="window.location.href='https://rm-portfolio-ebf25.web.app';">Go To Project</button>
+            </div>
+            </div>            
+            <!-- Project2 -->
+            <div class="group relative items-center justify-center overflow-hidden cursor-pointer">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" src="./img/rp-low-resolution-logo-color-on-transparent-background.png" alt="proj pic">
+                </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
+                <h1 class="text-2xl font-bold text-white">Lab2-Authentication</h1>
+                <p class="text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel amet rerum eligendi.</p>
+                <button class="border rounded-full p-2" onclick="window.location.href='https://testproj-f7c23.web.app/';">Go To Project</button>
+            </div>
+            </div>            
+            <!-- Project3 -->
+            <div class="group relative items-center justify-center overflow-hidden cursor-pointer">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" src="./img/rp-low-resolution-logo-color-on-transparent-background.png" alt="proj pic">
+                </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
+                <h1 class="text-2xl font-bold text-white">Lab3-webGISonEMU</h1>
+                <p class="text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel amet rerum eligendi.</p>
+                <button class="border rounded-full p-2" onclick="window.location.href='https://testproj-f7c23.web.app/';">Go To Project</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
 
         <!-- Custom JS -->
         <script src="./main.js"></script>
@@ -50,5 +101,7 @@
         <!-- Ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
 </html>
